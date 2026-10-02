@@ -138,9 +138,15 @@
           <input type="hidden" name="_subject" value="New Quote Enquiry - Auto Glass Repair Welly">
           <input type="hidden" name="_next" value="https://www.autoglassrepairwelly.co.nz/thank-you">
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-          <div class="form-row">
-            <label for="hero-name">Name <span class="req">*</span></label>
-            <input type="text" id="hero-name" name="name" required autocomplete="name">
+          <div class="form-split">
+            <div class="form-row">
+              <label for="hero-first-name">First Name <span class="req">*</span></label>
+              <input type="text" id="hero-first-name" name="first_name" required autocomplete="given-name">
+            </div>
+            <div class="form-row">
+              <label for="hero-last-name">Last Name <span class="req">*</span></label>
+              <input type="text" id="hero-last-name" name="last_name" required autocomplete="family-name">
+            </div>
           </div>
           <div class="form-row">
             <label for="hero-phone">Phone Number <span class="req">*</span></label>

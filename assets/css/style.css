@@ -192,6 +192,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .has-dropdown:hover .dropdown-menu,
 .has-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 .has-dropdown:hover > a i { transform: rotate(180deg); }
+/* Stack the dropdown items vertically — .main-nav ul (above) is a horizontal
+   flex row and would otherwise also catch this nested list */
+.main-nav .dropdown-menu { flex-direction: column; align-items: stretch; gap: 2px; }
 .dropdown-menu a {
   display: block;
   padding: 10px 12px;
@@ -239,7 +242,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     box-shadow: none; border: none; padding: 6px 0 0 14px;
     margin-top: 8px; display: none;
   }
-  .main-nav .has-dropdown.open .dropdown-menu { display: flex; }
+  .main-nav .has-dropdown.open .dropdown-menu { display: flex; flex-direction: column; }
   .has-dropdown > a i { margin-left: auto; }
   .has-dropdown.open > a i { transform: rotate(180deg); }
 }
@@ -577,6 +580,10 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   box-shadow: var(--shadow);
 }
 .form-row { margin-bottom: 16px; }
+/* First / Last name side by side */
+.form-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.form-split .form-row { margin-bottom: 0; min-width: 0; }
+.hero-form-card .form-split { margin-bottom: 12px; }
 .form-row label {
   display: block;
   font-family: var(--font-head);
