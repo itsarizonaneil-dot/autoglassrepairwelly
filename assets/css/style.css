@@ -28,6 +28,8 @@ body {
   background: var(--white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.02em;
+  word-spacing: 0.1em;
 }
 
 img { max-width: 100%; display: block; }
@@ -39,6 +41,7 @@ h1, h2, h3, h4 {
   color: var(--brand-darker);
   line-height: 1.2;
   margin: 0 0 0.6em;
+  letter-spacing: 0.008em;
 }
 
 h1 { font-size: clamp(2rem, 5vw, 3.1rem); font-weight: 700; }
@@ -69,7 +72,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   border-radius: 0;
   margin-bottom: 16px;
 }
-.section-head { max-width: 680px; margin: 0 0 44px; }
+.section-head { max-width: 680px; margin: 0 auto 44px; text-align: center; }
 .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
 
 /* Full-width running text — ported from the redesign, for sections where the
@@ -78,7 +81,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .prose p { font-size: 1.02rem; }
 /* Same size as body copy, still bold via the default h3 weight, so it reads
    as a heading without stepping up in size — ported from the redesign */
-.sub-head { font-size: 1.02rem; margin: 34px 0 14px; }
+.sub-head { font-size: 1.02rem; margin: 34px 0 14px; text-align: center; }
 .prose u { font-weight: 700; text-decoration-color: var(--brand); text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
 
 /* Buttons */
@@ -95,7 +98,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-.btn-primary { background: var(--brand); color: var(--white); }
+.btn-primary { background: var(--brand); color: var(--white); font-size: 0.78rem; padding: 11px 21px; gap: 8px; }
 .btn-primary:hover { background: var(--brand-dark); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(15, 102, 184, 0.35); }
 .btn-outline { background: transparent; border-color: rgba(255,255,255,0.65); color: var(--white); }
 .btn-outline:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
@@ -148,7 +151,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   align-items: center;
   gap: 10px;
   font-family: var(--font-head);
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.23rem, 2.2vw, 1.58rem);
   font-weight: 800;
   color: var(--brand-darker);
   white-space: nowrap;
@@ -192,6 +195,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .has-dropdown:hover .dropdown-menu,
 .has-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 .has-dropdown:hover > a i { transform: rotate(180deg); }
+/* Stack the dropdown items vertically — .main-nav ul (above) is a horizontal
+   flex row and would otherwise also catch this nested list */
+.main-nav .dropdown-menu { flex-direction: column; align-items: stretch; gap: 2px; }
 .dropdown-menu a {
   display: block;
   padding: 10px 12px;
@@ -239,7 +245,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     box-shadow: none; border: none; padding: 6px 0 0 14px;
     margin-top: 8px; display: none;
   }
-  .main-nav .has-dropdown.open .dropdown-menu { display: flex; }
+  .main-nav .has-dropdown.open .dropdown-menu { display: flex; flex-direction: column; }
   .has-dropdown > a i { margin-left: auto; }
   .has-dropdown.open > a i { transform: rotate(180deg); }
 }
@@ -259,7 +265,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   align-items: start;
 }
 .hero-copy { text-align: center; }
-.hero-copy h1 { font-weight: 800; letter-spacing: -0.015em; }
+.hero-copy h1 { font-weight: 800; letter-spacing: -0.015em; font-size: clamp(1.38rem, 5vw, 2.48rem); padding: 22px 0 26px; }
 .hero-copy .cta-row { justify-content: center; }
 .hours-note {
   display: flex;
@@ -393,6 +399,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   background: var(--white);
   border-bottom: 1px solid var(--border);
 }
+.page-hero:not(.confirm-hero) h1 { font-size: clamp(1.375rem, 5vw, 2.475rem); }
 .page-hero p.lead { max-width: 640px; font-size: 1.05rem; margin-bottom: 0; }
 .breadcrumb { font-size: 0.82rem; color: var(--ink-soft); margin-bottom: 14px; }
 .breadcrumb a { color: var(--brand); font-weight: 600; }
@@ -577,6 +584,10 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   box-shadow: var(--shadow);
 }
 .form-row { margin-bottom: 16px; }
+/* First / Last name side by side */
+.form-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.form-split .form-row { margin-bottom: 0; min-width: 0; }
+.hero-form-card .form-split { margin-bottom: 12px; }
 .form-row label {
   display: block;
   font-family: var(--font-head);
@@ -588,12 +599,12 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .form-row input, .form-row select, .form-row textarea {
   width: 100%;
   padding: 12px 14px;
-  border: 1.5px solid var(--border);
+  border: 1.5px solid #000000;
   border-radius: 0;
   font-family: var(--font-body);
   font-size: 0.95rem;
   color: var(--ink);
-  background: var(--brand-pale);
+  background: var(--white);
 }
 .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
   outline: none;
