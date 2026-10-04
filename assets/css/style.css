@@ -302,27 +302,6 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   height: 100%;
   object-fit: cover;
 }
-.hero-trust {
-  margin: 20px 0 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 26px;
-}
-.hero-trust li { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--ink); font-weight: 600; }
-.hero-trust i { color: var(--brand); flex-shrink: 0; }
-.hero-trust-note {
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px solid var(--border);
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: var(--ink-soft);
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
 /* Hero/quote form card: one bordered box with a solid blue header bar */
 .hero-form-card, .form-card {
