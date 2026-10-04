@@ -98,8 +98,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-.btn-primary { background: var(--white); color: #000000; border: 1.5px solid #000000; font-size: calc(0.78rem + 2px); padding: 11px 21px; gap: 8px; }
-.btn-primary:hover { background: #000000; color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
+.btn-primary { background: transparent; border-color: var(--brand); color: var(--brand); }
+.btn-primary:hover { background: var(--brand-light); transform: translateY(-2px); }
 .btn-outline { background: transparent; border-color: rgba(255,255,255,0.65); color: var(--white); }
 .btn-outline:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
 .btn-outline-brand { background: transparent; border-color: var(--brand); color: var(--brand); }
