@@ -6,6 +6,9 @@
   --brand-darker: #072f57;
   --brand-light: #e4effa;
   --brand-pale: #f3f8fd;
+  --green: #1e8e3e;
+  --green-dark: #16702f;
+  --green-light: #e3f4e6;
   --amber: #f2a900;
   --amber-dark: #b87a00;
   --ink: #000000;
@@ -335,15 +338,15 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .hero-form-card .form-row input,
 .hero-form-card .form-row select { padding: 11px 13px; }
 .hero-form-card .form-note { text-align: center; }
-.hero-form-card .form-note a { color: var(--brand); font-weight: 600; }
+.hero-form-card .form-note a { color: #000000; font-weight: 600; }
 .form-card .form-note { text-align: center; }
 
-.quote-head { background: var(--brand); color: var(--white); margin: 0 -20px; padding: 18px 20px 16px; }
+.quote-head { background: var(--green); border-bottom: 2.5px solid var(--white); color: var(--white); margin: 0 -20px; padding: 18px 20px 16px; }
 .quote-head-title { font-family: var(--font-head); font-size: clamp(1.5rem, 5vw, 1.85rem); font-weight: 800; line-height: 1.1; color: var(--white); margin: 0; }
 .quote-head-sub { font-size: 0.92rem; color: rgba(255,255,255,0.92); margin: 6px 0 0; }
-.quote-trust { display: flex; flex-wrap: wrap; gap: 6px 18px; background: var(--brand-light); margin: 0 -20px 18px; padding: 9px 20px; }
-.quote-trust li { font-size: 0.85rem; font-weight: 600; color: var(--brand-darker); }
-.quote-trust i { color: var(--brand); margin-right: 4px; }
+.quote-trust { display: flex; flex-wrap: wrap; gap: 6px 18px; background: var(--green-light); margin: 0 -20px 18px; padding: 9px 20px; }
+.quote-trust li { font-size: 0.85rem; font-weight: 600; color: #000000; }
+.quote-trust i { color: #000000; margin-right: 4px; }
 .req { color: #d32f2f; }
 
 .form-reassure {
@@ -545,6 +548,10 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   border-color: var(--brand);
   background: var(--white);
 }
+.hero-form-card .form-row input:focus, .hero-form-card .form-row select:focus, .hero-form-card .form-row textarea:focus,
+.form-card .form-row input:focus, .form-card .form-row select:focus, .form-card .form-row textarea:focus { border-color: var(--green); }
+.hero-form-card .btn-primary, .form-card .btn-primary { background: var(--green); }
+.hero-form-card .btn-primary:hover, .form-card .btn-primary:hover { background: var(--green-dark); box-shadow: 0 8px 20px rgba(30, 142, 62, 0.35); }
 .form-note { font-size: 0.78rem; color: var(--ink-soft); margin-top: 10px; }
 
 /* Contact info list */
