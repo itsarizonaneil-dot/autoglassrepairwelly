@@ -341,7 +341,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   white-space: nowrap;
 }
 .quote-badge-sub { display: block; font-size: 0.86rem; color: var(--ink); margin-top: 2px; }
-.quote-badge-arrow { display: block; width: 46px; height: 27px; margin: 6px auto 0; }
+.quote-badge-arrow { display: block; width: 62px; height: 27px; margin: 6px auto 0; }
 .quote-ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0 0 16px; }
 .quote-ticks li { display: flex; align-items: center; gap: 7px; font-size: 0.9rem; font-weight: 600; color: var(--ink); }
 .quote-ticks .tick { color: #000000; font-weight: 700; }
