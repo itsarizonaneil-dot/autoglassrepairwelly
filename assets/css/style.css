@@ -101,8 +101,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-.btn-primary { background: var(--brand); color: var(--white); font-size: calc(0.78rem + 2px); padding: 11px 21px; gap: 8px; }
-.btn-primary:hover { background: var(--brand-dark); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(15, 102, 184, 0.35); }
+.btn-primary { background: #000000; color: var(--white); font-size: calc(0.78rem + 2px); padding: 11px 21px; gap: 8px; }
+.btn-primary:hover { background: #333333; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
 .btn-outline { background: transparent; border-color: rgba(255,255,255,0.65); color: var(--white); }
 .btn-outline:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
 .btn-outline-brand { background: transparent; border-color: var(--brand); color: var(--brand); }
@@ -549,8 +549,6 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .hero-form-card .form-row input:focus, .hero-form-card .form-row select:focus, .hero-form-card .form-row textarea:focus,
 .form-card .form-row input:focus, .form-card .form-row select:focus, .form-card .form-row textarea:focus { border-color: var(--green); }
-.hero-form-card .btn-primary, .form-card .btn-primary { background: var(--green); }
-.hero-form-card .btn-primary:hover, .form-card .btn-primary:hover { background: var(--green-dark); box-shadow: 0 8px 20px rgba(30, 142, 62, 0.35); }
 .form-note { font-size: 0.78rem; color: var(--ink-soft); margin-top: 10px; }
 
 /* Contact info list */
