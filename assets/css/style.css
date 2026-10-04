@@ -480,7 +480,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   gap: 16px;
   font-family: var(--font-head);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: calc(1rem + 2px);
   color: #000000;
   cursor: pointer;
 }
