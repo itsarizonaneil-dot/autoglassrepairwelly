@@ -98,8 +98,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-.btn-primary { background: #000000; color: var(--white); font-size: calc(0.78rem + 2px); padding: 11px 21px; gap: 8px; }
-.btn-primary:hover { background: #333333; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
+.btn-primary { background: var(--white); color: #000000; border-color: #000000; font-size: calc(0.78rem + 2px); padding: 11px 21px; gap: 8px; }
+.btn-primary:hover { background: #000000; color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
 .btn-outline { background: transparent; border-color: rgba(255,255,255,0.65); color: var(--white); }
 .btn-outline:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
 .btn-outline-brand { background: transparent; border-color: var(--brand); color: var(--brand); }
@@ -341,7 +341,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   white-space: nowrap;
 }
 .quote-badge-sub { display: block; font-size: 0.86rem; color: var(--ink); margin-top: 2px; }
-.quote-badge-arrow { display: block; width: 62px; height: 27px; margin: 6px auto 0; }
+.quote-badge-arrow { display: block; width: 46px; height: 27px; margin: 6px auto 0; }
 .quote-ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0 0 16px; }
 .quote-ticks li { display: flex; align-items: center; gap: 7px; font-size: 0.9rem; font-weight: 600; color: var(--ink); }
 .quote-ticks .tick { color: #000000; font-weight: 700; }
