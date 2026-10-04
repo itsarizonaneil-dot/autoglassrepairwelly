@@ -149,7 +149,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   align-items: center;
   gap: 10px;
   font-family: var(--font-head);
-  font-size: clamp(1.23rem, 2.2vw, 1.58rem);
+  font-size: clamp(calc(1.23rem + 2px), calc(2.2vw + 2px), calc(1.58rem + 2px));
   font-weight: 800;
   color: #000000;
   white-space: nowrap;
