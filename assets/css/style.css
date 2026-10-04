@@ -12,8 +12,8 @@
   --ink-soft: #4a5866;
   --border: #d8e2ec;
   --white: #ffffff;
-  --font-head: 'Manrope', sans-serif;
-  --font-body: 'Manrope', sans-serif;
+  --font-head: 'Barlow Semi Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --shadow: 0 10px 30px rgba(7, 47, 87, 0.12);
   --radius: 0;
 }
@@ -265,7 +265,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   align-items: start;
 }
 .hero-copy { text-align: center; }
-.hero-copy h1 { font-weight: 800; letter-spacing: -0.015em; font-size: clamp(1.38rem, 5vw, 2.48rem); padding: 22px 0 26px; }
+.hero-copy h1 { font-weight: 800; letter-spacing: 0; font-size: clamp(1.38rem, 5vw, 2.48rem); padding: 22px 0 26px; }
 .hero-copy .cta-row { justify-content: center; }
 .hours-note {
   display: flex;
