@@ -325,7 +325,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 /* Hero/quote form card: one bordered box with a solid blue header bar */
 .hero-form-card, .form-card {
   background: var(--white);
-  border: 1.5px solid var(--brand-darker);
+  border: 2.5px solid var(--white);
   padding: 0 20px 20px;
   box-shadow: none;
 }
