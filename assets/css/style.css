@@ -344,7 +344,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .quote-badge-arrow { display: block; font-size: 1rem; color: var(--ink); margin-top: 6px; }
 .quote-ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0 0 16px; }
 .quote-ticks li { display: flex; align-items: center; gap: 7px; font-size: 0.9rem; font-weight: 600; color: var(--ink); }
-.quote-ticks i { color: var(--brand); }
+.quote-ticks i { color: #000000; }
 .req { color: #d32f2f; }
 
 .form-reassure {
