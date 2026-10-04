@@ -159,7 +159,6 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   color: #000000;
   white-space: nowrap;
 }
-.header-phone i { color: var(--brand); font-size: 0.78em; }
 .header-phone:hover { color: var(--brand); }
 
 .main-nav { display: flex; align-items: center; gap: 28px; }
