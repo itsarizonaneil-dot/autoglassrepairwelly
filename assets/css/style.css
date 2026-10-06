@@ -514,6 +514,15 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .card ul li { display: flex; gap: 10px; margin-bottom: 8px; color: var(--ink-soft); font-size: 0.95rem; }
 .card ul li i { color: var(--brand); margin-top: 4px; }
 
+/* Checklist that sits inside the hero copy column on service pages
+   (was a separate card section beneath the hero) */
+.guide { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
+.guide h3 { display: flex; align-items: center; gap: 10px; font-size: 1.15rem; margin-bottom: 14px; }
+.guide h3 i { color: var(--brand); font-size: 1rem; }
+.guide ul li { display: flex; gap: 10px; margin-bottom: 8px; color: var(--ink-soft); font-size: 0.98rem; }
+.guide ul li i { color: var(--brand); margin-top: 5px; flex-shrink: 0; }
+.guide-note { font-size: 0.82rem; color: var(--ink-soft); margin: 14px 0 0; }
+
 /* Pricing block */
 .price-box {
   background: var(--brand-darker);
