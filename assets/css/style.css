@@ -101,6 +101,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .btn-primary { background: transparent; border-color: var(--brand); color: var(--brand); font-size: calc(0.78rem + 2px); }
 .btn-primary:hover { background: var(--brand-light); transform: translateY(-2px); }
 button[type="submit"].btn-primary { border-color: #000000; color: #000000; }
+button[type="submit"].btn-primary:hover { background: #e6e6e6; }
 .btn-outline-brand { background: transparent; border-color: var(--brand); color: var(--brand); }
 .btn-outline-brand:hover { background: var(--brand-light); transform: translateY(-2px); }
 .btn-block { width: 100%; justify-content: center; }
