@@ -263,6 +263,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .hero-copy { text-align: center; }
 .hero-copy h1 { font-weight: 800; letter-spacing: 0; font-size: clamp(calc(1.38rem + 8px), calc(5vw + 8px), calc(2.48rem + 8px)); padding: 22px 0 26px; }
+/* Line the quote form up with the hero heading text, which sits below its own top padding */
+.hero-inner > .hero-form-card { margin-top: 26px; }
 .hero-copy .cta-row { justify-content: center; }
 .hours-note {
   display: flex;
@@ -623,6 +625,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero-inner { grid-template-columns: 1fr; gap: 30px; }
   .hero-copy { max-width: none; }
+  .hero-inner > .hero-form-card { margin-top: 0; }
   .page-hero-inner { grid-template-columns: 1fr; gap: 30px; }
   .coverage-grid { grid-template-columns: 1fr; }
   .coverage-map { min-height: 260px; }
