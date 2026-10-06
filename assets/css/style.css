@@ -118,8 +118,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 24px;
-  max-width: 1140px;
+  padding: 14px 40px;
+  max-width: none;
   margin: 0 auto;
 }
 .brand {
@@ -630,6 +630,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   .service-figure { aspect-ratio: 16 / 9; font-size: 2.4rem; }
 }
 @media (max-width: 560px) {
+  .header-inner { padding: 14px 24px; }
   .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 60px 0; }
   .hero { padding-top: 120px; }
