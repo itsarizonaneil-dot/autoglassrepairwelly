@@ -332,7 +332,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   font-family: var(--font-body);
   font-size: clamp(1rem, 4.6vw, 1.3rem);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--brand);
   margin-bottom: 4px;
