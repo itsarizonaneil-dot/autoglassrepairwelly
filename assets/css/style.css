@@ -329,9 +329,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .quote-badge-text { position: relative; }
 .quote-badge-kicker {
   display: block;
-  font-family: var(--font-head);
+  font-family: var(--font-body);
   font-size: clamp(1rem, 4.6vw, 1.3rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--brand);
