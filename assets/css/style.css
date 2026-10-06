@@ -81,7 +81,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .prose p { font-size: 1.02rem; }
 /* Same size as body copy, still bold via the default h3 weight, so it reads
    as a heading without stepping up in size — ported from the redesign */
-.sub-head { font-family: var(--font-body); font-size: 1.02rem; font-weight: 700; letter-spacing: 0.02em; margin: 34px 0 14px; text-align: center; }
+.sub-head { font-family: var(--font-body); font-size: 1.02rem; font-weight: 700; letter-spacing: 0.02em; margin: 34px 0 0; text-align: center; }
 .prose u { font-weight: 700; text-decoration-color: var(--brand); text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
 
 /* Buttons */
