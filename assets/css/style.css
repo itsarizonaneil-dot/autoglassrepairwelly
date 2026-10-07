@@ -221,6 +221,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 
 /* Mobile nav */
 @media (max-width: 900px) {
+  .footer-bottom .disclosure { text-align: left; max-width: none; }
   .main-nav {
     position: absolute;
     top: 100%; left: 0; right: 0;
@@ -629,6 +630,8 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   font-size: 0.8rem;
   color: rgba(255,255,255,0.5);
 }
+/* disclosure now sits in the footer-bottom row, opposite the copyright line */
+.footer-bottom .disclosure { margin: 0; max-width: 560px; text-align: right; }
 .disclosure {
   font-size: 0.78rem;
   color: rgba(255,255,255,0.45);
