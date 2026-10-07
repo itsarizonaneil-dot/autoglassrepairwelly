@@ -523,6 +523,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   gap: 34px;
   align-items: start;
 }
+.suburb-block { scroll-margin-top: 130px; }
 .suburb-block:first-of-type { border-top: none; }
 .suburb-block h3 { display: flex; align-items: center; gap: 10px; }
 .suburb-block h3 i { color: var(--brand); }
@@ -608,7 +609,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 
 /* Footer */
 .site-footer { background: #16222e; color: rgba(255,255,255,0.72); padding: 60px 0 26px; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.4fr 0.7fr 1fr; gap: 36px; margin-bottom: 40px; }
 .footer-brand .brand { color: var(--white); }
 .footer-logo { display: inline-block; }
 .footer-logo img { width: 280px; max-width: 100%; height: auto; display: block; }
