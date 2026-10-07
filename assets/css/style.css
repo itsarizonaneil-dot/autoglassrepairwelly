@@ -610,11 +610,13 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 
 /* Footer */
 .site-footer { background: #16222e; color: rgba(255,255,255,0.72); padding: 60px 0 26px; }
+/* footer content as wide as the hero, so the edges line up */
+.site-footer .container { max-width: 1320px; }
 .footer-grid {
   display: grid;
-  /* wider logo column, then four identical columns so their left edges sit at equal intervals */
-  grid-template-columns: 1.3fr repeat(4, 1fr);
-  column-gap: 28px;
+  /* five identical columns: logo plus Services / Service Areas / About / Contact */
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 32px;
   row-gap: 32px;
   margin-bottom: 40px;
 }
