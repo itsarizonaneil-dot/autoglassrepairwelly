@@ -560,8 +560,8 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 }
 .info-list li:last-child { border-bottom: none; }
 .info-list i { color: var(--brand); font-size: 1.15rem; width: 22px; margin-top: 2px; }
-.info-list .area-links a { color: var(--brand); font-weight: 600; }
-.info-list .area-links a:hover { text-decoration: underline; }
+.info-list .area-links a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.info-list .area-links a:hover { text-decoration-thickness: 2px; }
 .info-list strong { display: block; font-family: var(--font-head); font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; margin-bottom: 2px; }
 
 .map-embed {
