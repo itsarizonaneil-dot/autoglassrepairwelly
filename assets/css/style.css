@@ -620,6 +620,12 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   row-gap: 32px;
   margin-bottom: 40px;
 }
+/* Optical spacing on desktop: the columns are equal widths but the heading words differ in length,
+   so nudge Service Areas left and About right to even out the visible gaps between headings. */
+@media (min-width: 901px) {
+  .footer-grid > div:nth-child(3) { position: relative; left: -10px; }
+  .footer-grid > div:nth-child(4) { position: relative; left: 38px; }
+}
 .footer-brand .brand { color: var(--white); }
 .footer-logo { display: inline-block; }
 .footer-logo img { width: 280px; max-width: 100%; height: auto; display: block; }
