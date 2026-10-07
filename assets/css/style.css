@@ -610,7 +610,16 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 
 /* Footer */
 .site-footer { background: #16222e; color: rgba(255,255,255,0.72); padding: 60px 0 26px; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.4fr 0.7fr 1fr; gap: 36px; margin-bottom: 40px; }
+.footer-grid {
+  display: grid;
+  /* logo column up to 280px, then four content-sized columns; space-between puts equal gaps
+     between all five and pins the first/last to the container edges */
+  grid-template-columns: minmax(0, 280px) repeat(4, auto);
+  justify-content: space-between;
+  column-gap: 36px;
+  row-gap: 32px;
+  margin-bottom: 40px;
+}
 .footer-brand .brand { color: var(--white); }
 .footer-logo { display: inline-block; }
 .footer-logo img { width: 280px; max-width: 100%; height: auto; display: block; }
