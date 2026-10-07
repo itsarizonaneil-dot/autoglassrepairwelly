@@ -324,29 +324,9 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 /* Quote badge — replaces the old amber urgency pill + "Get a Free Quote"
    heading on every quote form. Drawn as an SVG outline with real HTML text
    on top so it stays sharp and uses the site font. */
-.quote-badge {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  padding: 22px 28px 24px;
-  text-align: center;
-  margin: 0 auto 16px;
-}
-.quote-badge-shape { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.quote-badge-text { position: relative; }
-.quote-badge-kicker {
-  display: block;
-  font-family: var(--font-body);
-  font-size: clamp(1rem, 4.6vw, 1.3rem);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--brand);
-  margin-bottom: 4px;
-  white-space: nowrap;
-}
-.quote-badge-sub { display: block; text-transform: uppercase; font-size: 0.76rem; color: var(--ink); margin-top: 2px; }
-.quote-badge-arrow { display: block; width: 38px; height: 22px; margin: 6px auto 0; }
+/* Quote badge is now a single image (shield, heading, sub-line and arrow are baked in) */
+.quote-badge { max-width: 400px; margin: 0 auto 16px; }
+.quote-badge img { display: block; width: 100%; height: auto; }
 .quote-ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0 0 16px; }
 .quote-ticks li { display: flex; align-items: center; gap: 7px; font-size: 0.8rem; font-weight: 400; color: var(--ink); }
 .quote-ticks .tick { color: #000000; font-weight: 400; }
