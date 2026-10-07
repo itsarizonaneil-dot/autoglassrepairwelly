@@ -35,8 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Services dropdown (tap to expand on mobile, hover on desktop)
   document.querySelectorAll('.has-dropdown > a.dropdown-toggle').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
-      link.closest('.has-dropdown').classList.toggle('open');
+      // Desktop: hover opens the menu and a click goes to the Services page.
+      // Phones: no hover, so a tap expands the menu (its first item links to /services).
+      if (window.matchMedia('(max-width: 900px)').matches) {
+        e.preventDefault();
+        link.closest('.has-dropdown').classList.toggle('open');
+      }
     });
   });
 
