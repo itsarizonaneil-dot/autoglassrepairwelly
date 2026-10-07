@@ -329,9 +329,6 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 /* Quote badge is now a single image (shield, heading, sub-line and arrow are baked in) */
 .quote-badge { max-width: 400px; margin: 0 auto 16px; }
 .quote-badge img { display: block; width: 100%; height: auto; }
-.quote-ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0 0 16px; }
-.quote-ticks li { display: flex; align-items: center; gap: 7px; font-size: calc(0.8rem + 2px); font-weight: 400; color: var(--ink); }
-.quote-ticks .tick { color: #000000; font-weight: 400; }
 .req { color: #d32f2f; }
 
 .form-reassure {
