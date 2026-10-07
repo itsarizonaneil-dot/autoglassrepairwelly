@@ -267,7 +267,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 .hero-copy { text-align: center; }
 /* Heroes run wider than the 1140px content column */
 .container.hero-inner, .container.page-hero-inner { max-width: 1320px; }
-.hero-copy h1 { font-weight: 800; letter-spacing: 0; font-size: clamp(1.38rem, 5vw, 2.48rem); padding: 22px 0 26px; }
+.hero-copy h1 { font-weight: 700; letter-spacing: 0; font-size: clamp(1.38rem, 5vw, 2.48rem); padding: 22px 0 26px; }
 /* Line the quote form up with the hero heading text, which sits below its own top padding */
 .hero-inner > .hero-form-card { margin-top: 26px; }
 .hero-copy .cta-row { justify-content: center; }
@@ -357,8 +357,8 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   border-bottom: 1px solid var(--border);
 }
 .page-hero:not(.confirm-hero) h1 { font-size: clamp(1.375rem, 5vw, 2.475rem); }
-/* hero headings back to the original brand navy (the global heading colour is black) */
-.hero-copy h1, .page-hero h1 { color: var(--brand-darker); }
+/* hero headings: original brand navy (the global heading colour is black), weight 700 */
+.hero-copy h1, .page-hero h1 { color: var(--brand-darker); font-weight: 700; }
 .page-hero p.lead { max-width: 640px; font-size: 1.05rem; margin-bottom: 0; }
 .breadcrumb { font-size: 0.82rem; color: var(--ink-soft); margin-bottom: 14px; }
 .breadcrumb a { color: var(--brand); font-weight: 600; }
