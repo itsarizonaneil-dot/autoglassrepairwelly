@@ -263,12 +263,10 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   width: 100%;
   display: grid;
   grid-template-columns: 2.05fr 1fr;
-  gap: 72px;
+  gap: 40px;
   align-items: start;
 }
 .hero-copy { text-align: center; }
-/* Heroes run wider than the 1140px content column */
-.container.hero-inner, .container.page-hero-inner { max-width: 1320px; }
 .hero-copy h1 { font-weight: 700; letter-spacing: 0; font-size: clamp(1.38rem, 5vw, 2.48rem); padding: 0 0 26px; }
 /* Line the quote form up with the hero heading text, which sits below its own top padding */
 .hero-inner > .hero-form-card { margin-top: 0; }
@@ -365,7 +363,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 .page-hero-inner {
   display: grid;
   grid-template-columns: 2.05fr 1fr;
-  gap: 72px;
+  gap: 40px;
   align-items: start;
 }
 .page-hero-copy p.lead { max-width: none; }
