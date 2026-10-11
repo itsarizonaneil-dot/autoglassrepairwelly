@@ -659,6 +659,8 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   .service-figure { aspect-ratio: 16 / 9; font-size: 2.4rem; }
 }
 @media (max-width: 560px) {
+  /* 16px stops iOS Safari zooming in when a field is tapped */
+  .form-row input, .form-row select, .form-row textarea { font-size: 16px; }
   .header-inner { padding: 14px 24px; }
   .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 60px 0; }
