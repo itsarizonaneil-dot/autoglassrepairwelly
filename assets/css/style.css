@@ -524,7 +524,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
 .form-row label {
   display: block;
   font-family: var(--font-head);
-  font-size: calc(0.85rem + 2px);
+  font-size: calc(0.85rem + 1px);
   font-weight: 400;
   color: var(--ink);
   margin-bottom: 2px;
@@ -535,7 +535,7 @@ button[type="submit"].btn-primary:hover { background: #f2f2f2; }
   border: 1.5px solid #000000;
   border-radius: 0;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: calc(0.95rem - 1px);
   color: var(--ink);
   background: var(--white);
 }
