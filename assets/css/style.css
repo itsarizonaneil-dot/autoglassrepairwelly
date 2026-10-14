@@ -597,14 +597,14 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .site-footer .container { max-width: 1320px; }
 .footer-grid {
   display: grid;
-  /* five identical columns: logo plus Services / Service Areas / About / Contact */
+  /* five identical columns: logo plus Services / Locations / About / Contact */
   grid-template-columns: repeat(5, 1fr);
   column-gap: 32px;
   row-gap: 32px;
   margin-bottom: 40px;
 }
 /* Optical spacing on desktop: the columns are equal widths but the heading words differ in length,
-   so nudge Services and Service Areas right (clear of the logo) and About further right to even out the visible gaps. */
+   so nudge Services and Locations right (clear of the logo) and About further right to even out the visible gaps. */
 @media (min-width: 901px) {
   .footer-grid > div:nth-child(2) { position: relative; left: 32px; }
   .footer-grid > div:nth-child(3) { position: relative; left: 6px; }
