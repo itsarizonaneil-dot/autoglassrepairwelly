@@ -576,18 +576,18 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   align-items: stretch;
 }
 .coverage-map { height: 100%; min-height: 340px; }
-/* Plain pin list, matching the redesign — no boxed cards, just an icon + name */
+/* Area groups: underlined, capitalised group link with dash-bulleted suburbs under it */
 .area-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
   align-content: start;
-  height: 100%;
 }
-.area-list li { display: flex; align-items: center; gap: 10px; font-size: 1rem; font-weight: 600; color: var(--ink); }
-.area-list a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
-.area-list a:hover { text-decoration-thickness: 2px; }
-.area-list i { color: var(--brand); font-size: 0.95rem; }
+.area-group > a { color: var(--ink); text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }
+.area-group > a:hover { color: var(--brand); }
+.area-group ul { margin: 8px 0 0; padding-left: 26px; }
+.area-group li { list-style: none; position: relative; padding-left: 22px; margin-bottom: 4px; color: var(--ink); }
+.area-group li::before { content: "-"; position: absolute; left: 0; }
 
 /* Bottom CTA band */
 
