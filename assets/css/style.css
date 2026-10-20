@@ -500,11 +500,13 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   border-top: 1px solid var(--border);
   padding: 44px 0;
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: minmax(max-content, 1fr) 1.4fr;
   gap: 34px;
   align-items: start;
 }
 .suburb-block { scroll-margin-top: 130px; }
+.suburb-photo { margin: 16px 0 0; border: 1px solid var(--border); }
+.suburb-photo img { width: 100%; height: auto; display: block; }
 .suburb-block:first-of-type { border-top: none; }
 .suburb-block h3 { display: flex; align-items: center; gap: 10px; }
 .suburb-block h3 i { color: var(--brand); }
