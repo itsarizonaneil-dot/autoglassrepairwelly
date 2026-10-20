@@ -498,14 +498,16 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 /* Suburb sections */
 .suburb-block {
   border-top: 1px solid var(--border);
-  padding: 44px 0;
+  padding: 44px 0 64px;
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  /* fixed title column, just wider than the longest title (Lower Hutt & Wainuiomata),
+     so every text column lines up and titles stay on one line */
+  grid-template-columns: 310px 1fr;
   gap: 34px;
   align-items: start;
 }
 .suburb-block { scroll-margin-top: 130px; }
-.suburb-photo { margin: 16px 0 0; border: 1px solid var(--border); max-width: 280px; }
+.suburb-photo { margin: 16px 0 0; border: 1px solid var(--border); }
 .suburb-photo img { width: 100%; max-width: 100%; height: auto; display: block; }
 .suburb-block > div { min-width: 0; }
 .suburb-block:first-of-type { border-top: none; }
