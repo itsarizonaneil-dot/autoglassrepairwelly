@@ -505,7 +505,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   align-items: start;
 }
 .suburb-block { scroll-margin-top: 130px; }
-.suburb-photo { margin: 16px 0 0; border: 1px solid var(--border); }
+.suburb-photo { margin: 16px 0 0; border: 1px solid var(--border); max-width: 280px; }
 .suburb-photo img { width: 100%; max-width: 100%; height: auto; display: block; }
 .suburb-block > div { min-width: 0; }
 .suburb-block:first-of-type { border-top: none; }
