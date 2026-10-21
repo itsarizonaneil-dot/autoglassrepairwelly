@@ -579,7 +579,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .coverage-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
+  gap: 64px;
   align-items: stretch;
 }
 .coverage-map { height: 100%; min-height: 340px; }
