@@ -370,6 +370,8 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   align-items: start;
 }
 .page-hero-copy p.lead { max-width: none; }
+/* Contact page: map and locations as their own row under the copy and form */
+.contact-lower { margin-top: 56px; align-items: start; }
 
 /* Thank-you / confirmation page */
 .confirm-hero { padding-bottom: 90px; }
