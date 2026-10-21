@@ -3,7 +3,8 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/service-areas", "destination": "/locations", "permanent": true }
+    { "source": "/service-areas", "destination": "/locations", "permanent": true },
+    { "source": "/side-and-rear-glass", "destination": "/side-mirror-repair", "permanent": true }
   ],
   "headers": [
     {
