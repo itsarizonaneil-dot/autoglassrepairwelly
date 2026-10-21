@@ -546,18 +546,17 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .form-note { font-size: 0.78rem; color: var(--ink-soft); margin-top: 10px; }
 
 /* Contact info list */
-.info-list li {
+.info-list > li {
   display: flex;
   gap: 14px;
   padding: 16px 0;
   border-bottom: 1px solid var(--border);
 }
-.info-list li:last-child { border-bottom: none; }
+.info-list > li:last-child { border-bottom: none; }
+.info-list .area-list { margin-top: 10px; gap: 16px; }
 .info-list i { color: var(--brand); font-size: 1.15rem; width: 22px; margin-top: 2px; }
 .info-list a[href^="tel:"] { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 .info-list a[href^="tel:"]:hover { text-decoration-thickness: 2px; }
-.info-list .area-links a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
-.info-list .area-links a:hover { text-decoration-thickness: 2px; }
 .info-list strong { display: block; font-family: var(--font-head); font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; margin-bottom: 2px; }
 
 .map-embed {
