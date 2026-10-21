@@ -186,6 +186,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   border-radius: 0;
   box-shadow: var(--shadow);
   min-width: 230px;
+  width: max-content;
   padding: 8px;
   opacity: 0;
   visibility: hidden;
@@ -205,6 +206,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   border-radius: 0;
   border-bottom: none;
   font-size: calc(0.9rem + 2px);
+  white-space: nowrap;
 }
 .dropdown-menu a:hover { background: var(--brand-light); border-color: transparent; }
 
