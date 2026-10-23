@@ -201,7 +201,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
 }
 .has-dropdown:hover .dropdown-menu,
-.has-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.has-dropdown:has(:focus-visible) .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 @media (hover: hover) {
   .has-dropdown:hover > a i { transform: rotate(180deg); }
 }
@@ -585,7 +585,8 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   gap: 26px;
   align-content: start;
 }
-.area-group > a { color: var(--ink); text-transform: uppercase; }
+/* Location group links styled like the button text */
+.area-group > a { font-family: var(--font-head); font-weight: 600; font-size: 0.98rem; color: #000000; }
 .area-group > a:hover { color: var(--brand); }
 .area-group ul { margin: 8px 0 0; padding-left: 26px; }
 .area-group li { list-style: none; position: relative; padding-left: 22px; margin-bottom: 4px; color: var(--ink); }

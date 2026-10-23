@@ -8,15 +8,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');
   if (toggle && nav) {
+    // Collapse the Services list whenever the whole menu closes
+    var collapseDropdowns = function () {
+      nav.querySelectorAll('.has-dropdown.open').forEach(function (d) { d.classList.remove('open'); });
+    };
     toggle.addEventListener('click', function () {
       nav.classList.toggle('open');
       var icon = toggle.querySelector('i');
       var isOpen = nav.classList.contains('open');
+      if (!isOpen) collapseDropdowns();
       toggle.setAttribute('aria-expanded', isOpen);
       if (icon) icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
     });
     var closeNav = function () {
       nav.classList.remove('open');
+      collapseDropdowns();
       toggle.setAttribute('aria-expanded', 'false');
       var icon = toggle.querySelector('i');
       if (icon) icon.className = 'fa-solid fa-bars';
