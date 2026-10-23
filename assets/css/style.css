@@ -155,7 +155,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   font-size: clamp(calc(1.23rem + 6px), calc(2.2vw + 6px), calc(1.58rem + 6px));
   font-weight: 800;
   color: var(--brand-darker);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   white-space: nowrap;
 }
 .header-phone:hover { color: var(--brand); }
