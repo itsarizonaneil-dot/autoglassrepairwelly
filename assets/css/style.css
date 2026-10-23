@@ -156,6 +156,8 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   font-weight: 800;
   color: var(--brand-darker);
   letter-spacing: 0.08em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
   white-space: nowrap;
 }
 .header-phone:hover { color: var(--brand); }
