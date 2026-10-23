@@ -635,7 +635,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .suburb-block { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .hero-inner { grid-template-columns: 1fr; gap: 30px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 60px; }
   .hero-copy { max-width: none; }
   .hero-inner > .hero-form-card { margin-top: 0; }
   .page-hero-inner { grid-template-columns: 1fr; gap: 30px; }
