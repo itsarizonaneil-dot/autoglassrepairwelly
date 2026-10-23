@@ -642,7 +642,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .coverage-map { min-height: 260px; }
   .service-row, .service-row.reverse { grid-template-columns: 1fr; gap: 22px; padding: 28px 0; }
   .service-row.reverse .service-figure { order: 0; }
-  .service-figure { aspect-ratio: 16 / 9; font-size: 2.4rem; }
+  .service-figure { aspect-ratio: 4 / 3; font-size: 2.4rem; }
 }
 @media (max-width: 560px) {
   /* 16px stops iOS Safari zooming in when a field is tapped */
