@@ -693,3 +693,6 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 
 /* Buttons and content links: one continuous underline, spaces included */
 .btn, .link-u { text-decoration: underline; text-underline-offset: 3px; }
+/* Text links turn the same blue as the buttons on hover */
+.link-u { transition: color 0.15s; }
+.link-u:hover { color: var(--brand); }
