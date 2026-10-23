@@ -57,6 +57,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 
 .section { padding: 88px 0; }
+/* Double the space under a section (homepage locations, after See all locations) */
+.section.section-double-bottom { padding-bottom: 176px; }
 .section-sm { padding: 56px 0; }
 .section-alt { background: var(--brand-pale); }
 .eyebrow {
@@ -685,6 +687,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .header-inner { padding: 14px 24px; }
   .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 60px 0; }
+  .section.section-double-bottom { padding-bottom: 120px; }
   .hero { padding-top: 110px; }
   .hero-copy .cta-row { margin-top: 30px; }
   .page-hero { padding: 110px 0 48px; }
