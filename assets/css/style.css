@@ -198,7 +198,9 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 }
 .has-dropdown:hover .dropdown-menu,
 .has-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-.has-dropdown:hover > a i { transform: rotate(180deg); }
+@media (hover: hover) {
+  .has-dropdown:hover > a i { transform: rotate(180deg); }
+}
 /* Stack the dropdown items vertically — .main-nav ul (above) is a horizontal
    flex row and would otherwise also catch this nested list */
 .main-nav .dropdown-menu { flex-direction: column; align-items: stretch; gap: 2px; }
@@ -256,6 +258,9 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .main-nav .has-dropdown.open .dropdown-menu { display: flex; flex-direction: column; }
   .has-dropdown > a i { margin-left: auto; }
   .has-dropdown.open > a i { transform: rotate(180deg); }
+  .has-dropdown:not(.open) > a i { transform: none; }
+  .main-nav .dropdown-menu { width: auto; }
+  .dropdown-menu a { white-space: normal; }
 }
 
 /* Hero (experimental redesign treatment, 2026-09-08 — light/bordered, mounted
