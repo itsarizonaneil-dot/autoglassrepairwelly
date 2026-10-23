@@ -586,7 +586,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   align-content: start;
 }
 /* Location group links styled like the button text */
-.area-group > a { font-family: var(--font-head); font-weight: 600; font-size: 0.98rem; color: #000000; }
+.area-group > a { font-family: var(--font-head); font-weight: 600; font-size: 0.98rem; color: #000000; text-transform: uppercase; }
 .area-group > a:hover { color: var(--brand); }
 .area-group ul { margin: 8px 0 0; padding-left: 26px; }
 .area-group li { list-style: none; position: relative; padding-left: 22px; margin-bottom: 4px; color: var(--ink); }
