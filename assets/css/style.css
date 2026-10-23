@@ -659,7 +659,5 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .page-hero { padding: 110px 0 48px; }
 }
 
-/* Buttons: underline each word, not the spaces between */
-.u { text-decoration: underline; text-underline-offset: 3px; }
-/* Content links: one continuous underline, spaces included */
-.link-u { text-decoration: underline; text-underline-offset: 3px; }
+/* Buttons and content links: one continuous underline, spaces included */
+.btn, .link-u { text-decoration: underline; text-underline-offset: 3px; }
