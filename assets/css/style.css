@@ -103,8 +103,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px; margin: 44px auto 0; }
 .btn-outline-brand { background: transparent; border-color: var(--brand); color: var(--brand); }
 .btn-outline-brand:hover { background: var(--brand-light); transform: translateY(-2px); }
-.btn-outline-dark { border-color: #000000; color: #000000; }
-.btn-outline-dark:hover { background: transparent; border-color: var(--brand); color: var(--brand); }
+.btn-outline-dark { border-color: transparent; color: #000000; }
+.btn-outline-dark:hover { background: transparent; border-color: transparent; color: var(--brand); }
 .btn-block { width: 100%; justify-content: center; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; }
 
