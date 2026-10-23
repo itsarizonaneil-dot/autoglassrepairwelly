@@ -432,7 +432,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .service-row.reverse { grid-template-columns: 1.6fr 1fr; }
 .service-row.reverse .service-figure { order: 2; }
 /* Homepage service tiles: double the space above each photo and below each button */
-.service-row-spaced { padding-top: 68px; padding-bottom: 68px; }
+.service-row.service-row-spaced { padding-top: 68px; padding-bottom: 68px; }
 .service-figure {
   display: grid;
   place-items: center;
@@ -657,7 +657,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .coverage-grid { grid-template-columns: 1fr; }
   .coverage-map { min-height: 260px; }
   .service-row, .service-row.reverse { grid-template-columns: 1fr; gap: 22px; padding: 28px 0; }
-  .service-row-spaced { padding-top: 56px; padding-bottom: 56px; }
+  .service-row.service-row-spaced { padding-top: 56px; padding-bottom: 56px; }
   .service-row.reverse .service-figure { order: 0; }
   .service-figure { aspect-ratio: 4 / 3; font-size: 2.4rem; }
 }
