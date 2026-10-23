@@ -151,10 +151,10 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-head);
-  font-size: clamp(calc(1.23rem + 3px), calc(2.2vw + 3px), calc(1.58rem + 3px));
+  font-family: 'Barlow Semi Condensed', var(--font-head);
+  font-size: clamp(calc(1.23rem + 6px), calc(2.2vw + 6px), calc(1.58rem + 6px));
   font-weight: 800;
-  color: #000000;
+  color: var(--brand-darker);
   white-space: nowrap;
 }
 .header-phone:hover { color: var(--brand); }
