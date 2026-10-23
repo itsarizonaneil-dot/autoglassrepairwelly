@@ -97,6 +97,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   border: 2px solid transparent;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .btn-primary { background: transparent; border-color: #000000; color: #000000; font-size: calc(0.78rem + 2px); }
 .btn-primary:hover { background: transparent; border-color: var(--brand); color: var(--brand); transform: translateY(-2px); }
@@ -419,8 +421,8 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .service-row:last-child { border-bottom: 1px solid var(--border); }
 .service-row.reverse { grid-template-columns: 1.6fr 1fr; }
 .service-row.reverse .service-figure { order: 2; }
-/* Homepage service tiles: double the space between each divider line and the photo */
-.service-row-spaced { padding-top: 68px; }
+/* Homepage service tiles: double the space above each photo and below each button */
+.service-row-spaced { padding-top: 68px; padding-bottom: 68px; }
 .service-figure {
   display: grid;
   place-items: center;
@@ -644,7 +646,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .coverage-grid { grid-template-columns: 1fr; }
   .coverage-map { min-height: 260px; }
   .service-row, .service-row.reverse { grid-template-columns: 1fr; gap: 22px; padding: 28px 0; }
-  .service-row-spaced { padding-top: 56px; }
+  .service-row-spaced { padding-top: 56px; padding-bottom: 56px; }
   .service-row.reverse .service-figure { order: 0; }
   .service-figure { aspect-ratio: 4 / 3; font-size: 2.4rem; }
 }
