@@ -224,12 +224,17 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .nav-toggle {
   display: none;
   width: 42px; height: 42px;
-  border: none;
-  background: var(--brand-light);
+  border: 2px solid #000000;
+  background: transparent;
   border-radius: 0;
-  color: var(--brand-darker);
+  color: #000000;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+/* Menu button styled like the Call button: black outline, blue on hover */
+@media (hover: hover) {
+  .nav-toggle:hover { border-color: var(--brand); color: var(--brand); }
 }
 
 /* Mobile nav */
