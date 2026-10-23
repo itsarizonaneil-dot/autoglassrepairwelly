@@ -419,6 +419,8 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .service-row:last-child { border-bottom: 1px solid var(--border); }
 .service-row.reverse { grid-template-columns: 1.6fr 1fr; }
 .service-row.reverse .service-figure { order: 2; }
+/* Extra space between the divider line and the first homepage service photo */
+.service-row-first { padding-top: 68px; }
 .service-figure {
   display: grid;
   place-items: center;
@@ -642,6 +644,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   .coverage-grid { grid-template-columns: 1fr; }
   .coverage-map { min-height: 260px; }
   .service-row, .service-row.reverse { grid-template-columns: 1fr; gap: 22px; padding: 28px 0; }
+  .service-row-first { padding-top: 56px; }
   .service-row.reverse .service-figure { order: 0; }
   .service-figure { aspect-ratio: 4 / 3; font-size: 2.4rem; }
 }
