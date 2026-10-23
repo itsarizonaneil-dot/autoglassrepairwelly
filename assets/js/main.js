@@ -10,19 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
   if (toggle && nav) {
     // Collapse the Services list whenever the whole menu closes
     var collapseDropdowns = function () {
+      if (nav.classList.contains('open')) return; // menu was reopened before the close finished
       nav.querySelectorAll('.has-dropdown.open').forEach(function (d) { d.classList.remove('open'); });
     };
     toggle.addEventListener('click', function () {
       nav.classList.toggle('open');
       var icon = toggle.querySelector('i');
       var isOpen = nav.classList.contains('open');
-      if (!isOpen) collapseDropdowns();
+      if (!isOpen) setTimeout(collapseDropdowns, 450);
       toggle.setAttribute('aria-expanded', isOpen);
       if (icon) icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
     });
     var closeNav = function () {
       nav.classList.remove('open');
-      collapseDropdowns();
+      setTimeout(collapseDropdowns, 450);
       toggle.setAttribute('aria-expanded', 'false');
       var icon = toggle.querySelector('i');
       if (icon) icon.className = 'fa-solid fa-bars';
