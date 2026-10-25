@@ -535,7 +535,14 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   align-items: start;
 }
 .suburb-block { scroll-margin-top: 130px; }
-.suburb-photo { margin: 16px 0 0; border: 1px solid var(--border); }
+.suburb-photo { margin: 0; border: 1px solid var(--border); }
+/* Heading runs across the top; the photo and text sit side by side under it,
+   so the text starts level with the top of the photo */
+.suburb-block { row-gap: 16px; }
+.suburb-block > div:first-child { display: contents; }
+.suburb-block h3 { grid-column: 1 / -1; margin: 0; }
+.suburb-block .suburb-photo { grid-column: 1; }
+.suburb-block > div:last-child { grid-column: 2; }
 .suburb-photo img { width: 100%; max-width: 100%; height: auto; display: block; }
 .suburb-block > div { min-width: 0; }
 /* Divider above Wellington City, evenly spaced from the Submit button above and the heading below */
@@ -668,6 +675,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 @media (max-width: 900px) {
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .suburb-block { grid-template-columns: 1fr; }
+  .suburb-block > div:last-child { grid-column: 1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero-inner { grid-template-columns: 1fr; gap: 60px; }
   .hero-copy { max-width: none; }
