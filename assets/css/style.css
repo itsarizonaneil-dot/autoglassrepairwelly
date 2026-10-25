@@ -708,3 +708,11 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 /* Text links turn the same blue as the buttons on hover */
 .link-u { transition: color 0.15s; }
 .link-u:hover { color: var(--brand); }
+
+/* Contact page: halve the gap under the intro copy and the padding above the locations heading */
+.page-hero.contact-hero { padding-bottom: 24px; }
+.section.contact-locations { padding-top: 44px; }
+@media (max-width: 560px) {
+  .page-hero.contact-hero { padding-bottom: 24px; }
+  .section.contact-locations { padding-top: 30px; }
+}
