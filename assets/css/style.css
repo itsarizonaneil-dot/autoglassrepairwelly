@@ -407,7 +407,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 /* Thank-you / confirmation page */
 .confirm-hero { padding-bottom: 90px; }
 .confirm-hero .section-head.center { margin-bottom: 64px; }
-.confirm-hero h1 { font-size: clamp(calc(2rem - 18px), calc(5vw - 18px), calc(3.1rem - 18px)); margin-bottom: 1.2em; }
+.confirm-hero h1 { font-size: clamp(calc(2rem - 19px), calc(5vw - 19px), calc(3.1rem - 19px)); margin-bottom: 1.2em; }
 .confirm-hero .btn { text-decoration: none; }
 .confirm-hero .btn span { text-decoration: underline; text-underline-offset: 3px; }
 .confirm-icon {
