@@ -82,6 +82,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 /* Same size as body copy, still bold via the default h3 weight, so it reads
    as a heading without stepping up in size — ported from the redesign */
 .sub-head { font-family: var(--font-body); font-size: 1.02rem; font-weight: 700; letter-spacing: 0.02em; margin: 34px 0 0; text-align: center; }
+.terms-list { list-style: disc; padding-left: 1.3em; margin: 0 0 1em; }
+.terms-list li { margin-bottom: 8px; color: var(--ink-soft); font-size: 1.02rem; }
 .prose u { font-weight: 700; text-decoration: none; }
 
 /* Buttons */
@@ -646,6 +648,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 .site-footer h4 { color: var(--white); font-size: calc(0.9rem + 2px); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
 .site-footer h4 a { color: inherit; }
 .site-footer h4 a:hover { text-decoration: underline; }
+.site-footer .footer-note { font-size: 0.78rem; opacity: 0.75; line-height: 1.4; }
 .site-footer ul li { margin-bottom: 10px; font-size: 0.92rem; }
 .footer-locations li { text-transform: uppercase; letter-spacing: 0.04em; }
 .site-footer a:hover { color: var(--white); }
