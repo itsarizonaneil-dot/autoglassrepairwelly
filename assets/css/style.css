@@ -724,7 +724,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 
 /* Double the space between the last page section and the footer */
 .page-hero:has(+ .site-footer) { padding-bottom: 128px; }
-.page-hero.confirm-hero:has(+ .site-footer) { padding-bottom: 180px; }
+.page-hero.confirm-hero:has(+ .site-footer) { padding-bottom: 90px; }
 .section:has(+ .site-footer) { padding-bottom: 176px; }
 /* Extra space at the top of the footer, above the logo and columns */
 .site-footer { padding-top: 120px; }
