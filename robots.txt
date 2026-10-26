@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.autoglassrepairwelly.co.nz/sitemap.xml
+Sitemap: https://www.autoglasswelly.co.nz/sitemap.xml
