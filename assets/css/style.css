@@ -723,9 +723,10 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
 }
 
 /* Double the space between the last page section and the footer */
-.page-hero:has(+ .site-footer) { padding-bottom: 128px; }
+.page-hero:has(+ .site-footer) { padding-bottom: 256px; }
 .page-hero.confirm-hero:has(+ .site-footer) { padding-bottom: 90px; }
 .section:has(+ .site-footer) { padding-bottom: 176px; }
+.section:not(.section-alt):has(+ .site-footer) { padding-bottom: 352px; }
 /* Extra space at the top of the footer, above the logo and columns */
 .site-footer { padding-top: 120px; }
 @media (max-width: 560px) {
