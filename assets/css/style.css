@@ -82,8 +82,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 /* Same size as body copy, still bold via the default h3 weight, so it reads
    as a heading without stepping up in size — ported from the redesign */
 .sub-head { font-family: var(--font-body); font-size: 1.02rem; font-weight: 700; letter-spacing: 0.02em; margin: 34px 0 0; text-align: center; }
-.prose-privacy .sub-head { margin-bottom: 8px; }
-.prose-privacy .sub-head + p, .prose-privacy .sub-head + ul { margin-top: 0; }
+.prose-legal .sub-head { margin-bottom: 8px; }
+.prose-legal .sub-head + p, .prose-legal .sub-head + ul { margin-top: 0; }
 .terms-list { list-style: disc; padding-left: 1.3em; margin: 0 0 1em; }
 .terms-list li { margin-bottom: 8px; color: var(--ink-soft); font-size: 1.02rem; }
 .prose u { font-weight: 700; text-decoration: none; }
