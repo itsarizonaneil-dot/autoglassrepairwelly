@@ -420,6 +420,7 @@ button[type="submit"].btn-primary { display: flex; width: auto; min-width: 180px
   font-size: 1.9rem;
   margin: 0 auto 40px;
 }
+.confirm-icon.confirm-icon-check { background: none; font-size: calc(1.9rem + 3px); }
 
 /* Cards / grid */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
