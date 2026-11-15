@@ -19,4 +19,24 @@
   window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', MEASUREMENT_ID);
+
+  // Key events. Mark these as key events in GA4 (Admin > Events):
+  //   generate_lead - quote form sent (fires when Formspree lands on /thank-you)
+  //   phone_call    - a tel: link was tapped
+  //   email_click   - a mailto: link was clicked
+  if (/^\/thank-you(\.html)?\/?$/.test(location.pathname)) {
+    gtag('event', 'generate_lead', { form_name: 'quote_form' });
+  }
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    var isPhone = href.indexOf('tel:') === 0;
+    gtag('event', isPhone ? 'phone_call' : 'email_click', {
+      link_url: href,
+      page_location: location.href,
+      transport_type: 'beacon'
+    });
+  });
 })();
